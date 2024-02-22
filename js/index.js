@@ -55,11 +55,9 @@ let deleteData = (e) => {
 
 let editData = (e) => {
     let selectTask = e.parentElement.parentElement;
-
     taskTitle.value = selectTask.children[0].innerHTML;
     dueDate.value = selectTask.children[1].innerHTML;
     descTask.value = selectTask.children[2].innerHTML;
-    
     selectTask.remove();
 };
 
